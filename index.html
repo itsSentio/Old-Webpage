@@ -36,6 +36,9 @@
          .sectionImagesMobile {
             display: none;
          }
+         .sectionImagesHalfBrowser {
+            display: none;
+         }
          .sectionFooter {
             bottom:0px;
             width: 100%;
@@ -95,7 +98,7 @@
             padding: none;
             margin: none;
          }
-         @media screen and (max-width: 850px) {
+         @media screen and (max-width: 1400px) {
             body {
                margin-left: auto;
                margin-right: auto;
@@ -120,6 +123,15 @@
             }
             li.navigationItem {
                font-size: 1.5em;
+            }
+            .sectionImagesBrowser{
+               display: none;
+            }
+            .sectionImagesMobile{
+               display:none;
+            }
+            .sectionImagesHalfBrowser {
+            display: block;
             }
          }
          @media screen and (max-width: 480px) {
@@ -157,6 +169,9 @@
             }
             .sectionImagesMobile{
                display:block;
+            }
+            .sectionImagesHalfBrowser {
+            display: none;
             }
          }
       </style>
@@ -202,6 +217,9 @@
          </div>
          <div class='sectionImagesBrowser'>
          <img src= 'http://dummyimage.com/600x250/444/fff'>
+         </div>
+         <div class='sectionImagesHalfBrowser'>
+         <img src= 'http://dummyimage.com/450x175/444/fff'>
          </div>
          <div class='sectionImagesMobile'>
          <img src= 'http://dummyimage.com/300x125/444/fff'>
