@@ -1,47 +1,169 @@
-  <!doctype html>
-    <html>
-      <head>
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <title>Mobile Friendly Website</title>
-      </head>
-      <body>
-        <div id="headline">
-          <header>
-            <h1>Mobile Friendly Webpage</h1>
-            <p>Insert text here.</p>
-          </header>
-          <div id="fluff">
-            <p>Insert more text here.</p>
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1", http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+      <title>Mobile Friendly Website</title>
+      <style>
+         body {
+            margin-left: 8em;
+            margin-right: 8em;
+            margin-top: 1em;
+         }
+         footer {
+            clear: both;
+         }
+         h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            line-height: 30px;
+            display: inline-block;
+            float: left;
+            margin-left: .4em;
+         }
+         h2 {
+            font-size: 1.7em;
+            color: #000;
+         }
+         p2 {
+            margin-left: 1em;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+         }
+         .sectionImages {
+            margin-top: 35px;
+         }
+         .sectionFooter {
+            bottom:0px;
+            width: 100%;
+            margin: 0;
+            line-height: 30px;
+            background-color: #444;
+            height: 30px;
+         }
+         .columnLeft {
+            font-family: 'Roboto', sans-serif;
+            float: left;
+            width: 40%;
+            margin-left: auto ;
+            margin-right: auto ;
+            padding: 1.8em;
+         }
+         .columnRight {
+            font-family: 'Roboto', sans-serif;
+            float: right;
+            padding: 1.8em;
+            width: 40%;
+         }
+         .navigationMenu ul {
+         list-style: none;
+         background-color: #444;
+         padding: 0;
+         margin: 0;
+         text-align: right;
+         }
+         li.navigationItem {
+         font-family: 'Roboto', sans-serif;
+         font-size: 1.2em;
+         line-height: 30px;
+         height: 30px;
+         margin: 1em;
+         border-bottom: 1.5px solid #888;
+         display: inline-block;
+         margin-left: -4px;
+         }
+         .navigationMenu a {
+         text-decoration: none;
+         color: #fff;
+         display: block;
+         transition: .5s background-color;
+         }
+         .navigationMenu a:hover {
+         background-color: #575757;
+         }
+         .navigationMenu a.active { 
+         background-color: #fff;
+         color: #444;
+         cursor: default;
+         }
+         li.navigationName {
+            border-bottom: none;
+            font-weight: bold;
+            padding: none;
+            margin: none;
+         }
+         @media screen and (max-width: 850px) {
+            body {
+               margin-left: auto;
+               margin-right: auto;
+            }
+            .columnLeft { 
+               clear: both;
+            }  
+            .columnRight {
+               clear: both;
+               float: left;
+               margin-top: -4.5em;
+            }
+            .navigationMenu ul {
+            list-style: none;
+            background-color: #444;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            }
+            h1 {
+               display: none;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class='navigationMenu'>
             <ul>
-              <li>This</li>
-              <li>Is</li>
-              <li>A</li>
-              <li>List</li>
+               <h1>Lorem Ipsum</h1>
+               <li class='navigationItem'><a href="#">Home</a></li>
+               <li class='navigationItem'><a href="#">About Me</a></li>
+               <li class='navigationItem'><a href="#">Contact Me</a></li>
             </ul>
-          </div>
-        </div>
-        <div id="section1">
-          <h2>Interesting Header Name</h2>
-          <p>Interesting information.</p>
-          <ul>
-            <li>Another</li>
-            <li>Useless</li>
-            <li>List</li>
-          </ul>
-        </div>
-        <div id="section2">
-          <h2>Useless Header Name</h2>
-          <p>More useless information.</p>
-          <div id="images">
-            <img src="uselessInformation.jpg" />
-          </div>
-        </div>
-        <div id="section3">
-          <h2>Another Interesting Header Name</h2>
-          <p>More interesting information.</p>
-        </div>
-        <footer>
-          <p>Useless footer information.</p>
-        </footer>
-          </body>
-    </html>
+         </div>
+      <hr>
+      </header>
+      <div class='columnLeft'> 
+         <div id="sectionOne">
+            <h2>Mollit Anim</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+         </div>
+         <div id="sectionTwo">
+            <h2>Lorem Ipsum</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <ul>
+               <li>Nemo enim ipsam voluptatem quia voluptas sit.</li>
+               <li>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</li>
+               <li>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</li>
+            </ul>
+         </div>
+      </div>
+      <div class='columnRight'>
+         <div id="sectionThree">
+            <h2>Sit Amet</h2>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <div id="images">
+               <img src=""/>
+            </div>
+         </div>
+         <div id="sectionFour">
+            <h2>Aliquip</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+         </div>
+         <div class='sectionImages'>
+         <img src= 'http://dummyimage.com/600x250/444/fff'>
+         </div>
+      </div>
+      <footer>
+         <div class='sectionFooter'>
+            <p2>Copyright © 2015 Ricky Smith</p2>
+         </div>
+      </footer>
+   </body>
+</html>
