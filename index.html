@@ -4,21 +4,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1", http-equiv="Content-Type" content="text/html"; charset="UTF-8">
       <title>Mobile Friendly Website</title>
       <style>
+         html {
+         background: url(backgroundImage.png) no-repeat center center fixed; 
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         }
          body {
-         margin-left: 8em;
-         margin-right: 8em;
-         margin-top: 1em;
+         margin-left: auto;
+         margin-right: auto;
          }
          footer {
          clear: both;
          }
          h1 {
-         font-family: 'Roboto', sans-serif;
+         font-family: 'Norwester', sans-serif;
          color: #fff;
-         line-height: 30px;
-         display: inline-block;
-         float: left;
-         margin-left: .4em;
+         font-size: 104px;
+         text-align: center;
          }
          h2 {
          font-size: 1.7em;
@@ -29,52 +33,74 @@
          font-family: 'Roboto', sans-serif;
          color: #fff;
          }
-         .sectionImagesBrowser {
-         margin-top: 35px;
-         display: block;
+         div#jumpToPortfolio {
+         	margin-top: 50%;
          }
-         .sectionImagesMobile {
-         display: none;
+         div#jumpToAbout {
+         	margin-top: 60%
          }
-         .sectionImagesHalfBrowser {
-         display: none;
+         div.sectionPortfolio {
+         	width: 100%;
+         	height: 700px;
+         	display: inline-block;
+         	background-color: #fff;
+         	position: absolute;
+         	margin-top: 50%;
          }
-         .sectionFooter {
-         bottom:0px;
-         width: 100%;
-         margin: 0;
-         line-height: 30px;
-         background-color: #444;
-         height: 30px;
+         div.sectionAbout {
+         	width: 100%;
+         	height: 700px;
+         	display: inline-block;
+         	background-color: #fff;
+         	position: absolute;
+         	margin-top: 60%
          }
-         .columnLeft {
-         font-family: 'Roboto', sans-serif;
-         float: left;
-         width: 40%;
-         margin-left: auto ;
-         margin-right: auto ;
-         padding: 1.8em;
+         div.sectionMiddle {
+    	 display: inline-block;
+    	 position: absolute;
+    	 top: 0;
+    	 bottom: 0;
+    	 left: 0;
+    	 right: 0;
+    	 width: 1075px;
+    	 height: 500px;
+    	 margin: auto;
          }
-         .columnRight {
-         font-family: 'Roboto', sans-serif;
-         float: right;
-         padding: 1.8em;
-         width: 40%;
+         .navigationBoxes ul {
+         	list-style: none;
+         	padding: 0;
+         	margin: 0;
+         	text-align: center;
+         }
+         .navigationBoxItem {
+         	font-family: 'Norwester', sans-serif;
+         	display: inline-block;
+         	line-height: 20px;
+         	font-size: 54px;
+         	padding: 30px;
+         	border: 4px solid #fff;
+         	margin-left: .3em;
+         	margin-top: -1em;
+         	transition: 1s background-color;
+         }
+         .navigationBoxItem:hover {
+         	background-color: rgba(243,243,243,0.6);
+         }
+         .navigationBoxes a {
+         	color: #fff;
+         	text-decoration: none;
          }
          .navigationMenu ul {
          list-style: none;
-         background-color: #444;
-         padding: 0;
          margin: 0;
          text-align: right;
          }
-         li.navigationItem {
-         font-family: 'Roboto', sans-serif;
-         font-size: 1.2em;
+         .navigationMenu li {
+         font-family: 'Norwester', sans-serif;
+         font-size: 1.8em;
          line-height: 30px;
          height: 30px;
-         margin: 1em;
-         border-bottom: 1.5px solid #888;
+         margin: .9em;
          display: inline-block;
          margin-left: -4px;
          }
@@ -82,10 +108,10 @@
          text-decoration: none;
          color: #fff;
          display: block;
-         transition: .5s background-color;
+         transition: 1s font-size;
          }
          .navigationMenu a:hover {
-         background-color: #575757;
+         font-size: 1.1em;
          }
          .navigationMenu a.active { 
          background-color: #fff;
@@ -103,14 +129,6 @@
          margin-left: auto;
          margin-right: auto;
          }
-         .columnLeft { 
-         clear: both;
-         }  
-         .columnRight {
-         clear: both;
-         float: left;
-         margin-top: -4.5em;
-         }
          .navigationMenu ul {
          list-style: none;
          background-color: #444;
@@ -124,31 +142,11 @@
          li.navigationItem {
          font-size: 1.5em;
          }
-         .sectionImagesBrowser{
-         display: none;
-         }
-         .sectionImagesMobile{
-         display:none;
-         }
-         .sectionImagesHalfBrowser {
-         display: block;
-         margin-top: 25px;
-         }
          }
          @media screen and (max-width: 480px) {
          body {
          margin-left: none;
          margin-right: none;
-         }
-         .columnLeft { 
-         clear: both;
-         width: 80%;
-         }  
-         .columnRight {
-         clear: both;
-         float: left;
-         margin-top: -4.5em;
-         width: 80%;
          }
          .navigationMenu ul {
          list-style: none;
@@ -165,19 +163,6 @@
          margin-left: 0px;
          margin: 1em;
          }
-		   .sectionFooter {
-         text-align: center;
-		   }
-         .sectionImagesBrowser{
-         display: none;
-         }
-         .sectionImagesMobile{
-         display:block;
-         margin-top: 15px;
-         }
-         .sectionImagesHalfBrowser {
-         display: none;
-         }
          }
       </style>
    </head>
@@ -185,55 +170,37 @@
       <header>
          <div class='navigationMenu'>
             <ul>
-               <h1>Lorem Ipsum</h1>
-               <li class='navigationItem'><a href="#">Home</a></li>
-               <li class='navigationItem'><a href="#">About Me</a></li>
-               <li class='navigationItem'><a href="#">Contact Me</a></li>
+               <li class='smoothScroll'><a href="#">Home</a></li>
+               <li class='smoothScroll'><a href="#portfolio">Portfolio</a></li>
+               <li class='smoothScroll'><a href="#about">About</a></li>
+               <li class='smoothScroll'><a href="#">Contact</a></li>
             </ul>
          </div>
-         <hr>
       </header>
-      <div class='columnLeft'>
-         <div id="sectionOne">
-            <h2>Mollit Anim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-         </div>
-         <div id="sectionTwo">
-            <h2>Lorem Ipsum</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            <ul>
-               <li>Nemo enim ipsam voluptatem quia voluptas sit.</li>
-               <li>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</li>
-               <li>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</li>
-            </ul>
-         </div>
+      <div class="sectionMiddle">
+      <h1>Programmer. Designer.</h1>
+      	<div class="navigationBoxes">
+       		<ul>
+       			<li class='navigationBoxItem'><a href="#portfolio">Portfolio</a></li>
+       			<li class='navigationBoxItem'><a href="#">Contact</a></li>
+       		</ul>
+      	</div>
       </div>
-      <div class='columnRight'>
-         <div id="sectionThree">
-            <h2>Sit Amet</h2>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            <div id="images">
-               <img src=""/>
-            </div>
-         </div>
-         <div id="sectionFour">
-            <h2>Aliquip</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
-         </div>
-         <div class='sectionImagesBrowser'>
-            <img src= 'http://dummyimage.com/600x250/444/fff'>
-         </div>
-         <div class='sectionImagesHalfBrowser'>
-            <img src= 'http://dummyimage.com/450x175/444/fff'>
-         </div>
-         <div class='sectionImagesMobile'>
-            <img src= 'http://dummyimage.com/300x125/444/fff'>
-         </div>
+      <div class='sectionPortfolio'>
+      <ul>
+      	<li><a href="responsiveWebpage.html">Responsive Webpage</a></li>
+      </ul>
       </div>
+      <div id="jumpToPortfolio"><a name='portfolio'>.</a></div>
+      <div class='sectionAbout'>
+      </div>
+      <div id="jumpToAbout"><a name='about'>.</a></div>
       <footer>
          <div class='sectionFooter'>
-            <p2>Copyright © 2015 Ricky Smith</p2>
+            <p2></p2>
          </div>
       </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./smoothscroll.js"></script>
    </body>
 </html>
