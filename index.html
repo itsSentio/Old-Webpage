@@ -37,6 +37,20 @@
          	margin-top: 50%;
          }
          div#jumpToAbout {
+         	margin-top: 60%;
+         }
+         div#jumpToContact {
+         	margin-top: 60%;
+         }
+         div#jumpToHome {
+         	margin-top: -30px;
+         }
+         div.sectionContact {
+         	width: 100%;
+         	height: 700px;
+         	display: inline-block;
+         	background-color: #fff;
+         	position: absolute;
          	margin-top: 60%
          }
          div.sectionPortfolio {
@@ -47,6 +61,10 @@
          	position: absolute;
          	margin-top: 50%;
          }
+         .backToTopButton {
+         	float: right;
+         	padding: 10px;
+         }
          div.sectionAbout {
          	width: 100%;
          	height: 700px;
@@ -54,6 +72,9 @@
          	background-color: #fff;
          	position: absolute;
          	margin-top: 60%
+         }
+         .sectionPortfolio ul {
+         	font-family: 'Oswald', sans-serif;
          }
          div.sectionMiddle {
     	 display: inline-block;
@@ -84,7 +105,7 @@
          	transition: 1s background-color;
          }
          .navigationBoxItem:hover {
-         	background-color: rgba(243,243,243,0.6);
+         	background-color: rgba(243,243,243,0.2);
          }
          .navigationBoxes a {
          	color: #fff;
@@ -168,12 +189,12 @@
    </head>
    <body>
       <header>
+         <div id="jumpToHome"><a name='home'>.</a></div>
          <div class='navigationMenu'>
             <ul>
-               <li class='smoothScroll'><a href="#">Home</a></li>
                <li class='smoothScroll'><a href="#portfolio">Portfolio</a></li>
                <li class='smoothScroll'><a href="#about">About</a></li>
-               <li class='smoothScroll'><a href="#">Contact</a></li>
+               <li class='smoothScroll'><a href="#contact">Contact</a></li>
             </ul>
          </div>
       </header>
@@ -182,19 +203,25 @@
       	<div class="navigationBoxes">
        		<ul>
        			<li class='navigationBoxItem'><a href="#portfolio">Portfolio</a></li>
-       			<li class='navigationBoxItem'><a href="#">Contact</a></li>
+       			<li class='navigationBoxItem'><a href="#contact">Contact</a></li>
        		</ul>
       	</div>
       </div>
       <div class='sectionPortfolio'>
+      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
       <ul>
       	<li><a href="responsiveWebpage.html">Responsive Webpage</a></li>
       </ul>
       </div>
       <div id="jumpToPortfolio"><a name='portfolio'>.</a></div>
       <div class='sectionAbout'>
+      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
       </div>
       <div id="jumpToAbout"><a name='about'>.</a></div>
+      <div class='sectionContact'>
+      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
+      </div>
+      <div id="jumpToContact"><a name='contact'>.</a></div>
       <footer>
          <div class='sectionFooter'>
             <p2></p2>
