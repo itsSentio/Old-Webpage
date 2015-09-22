@@ -34,6 +34,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.8em;
             color: #000;
+            margin-top: 0px;
         }
         p2 {
             margin-left: 1em;
@@ -204,6 +205,26 @@
             margin-left: 10px;
             margin-top: 10px;
         }
+        .largeBoxContainerItem img {
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        .largeBoxContainerItem img:hover {
+            -webkit-filter: blur(2px);
+        }
+        .smallBoxContainerItem img {
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        .smallBoxContainerItem img:hover {
+            -webkit-filter: blur(2px);
+        }
         @media screen and (max-width: 1400px) {
             body {
                 margin-left: auto;
@@ -278,7 +299,9 @@
         <div class='boxContainer'>
             <div class='boxWrapper'>
                 <div class='boxWrapperLeft'>
-                    <div class='largeBoxContainerItem'><img src='https://placehold.it/433x277'>
+                    <div class='largeBoxContainerItem'>
+                        <a href='responsiveWebpage.html'><img src='responsiveWebsitePort.png'>
+                        </a>
                     </div>
                     <div class='largeBoxContainerItem'><img src='https://placehold.it/433x277'>
                     </div>
@@ -299,6 +322,11 @@
                 </div>
             </div>
             <div class='rightBoxColumn'>
+                <div class='backToTopButton'>
+                    <a href="#home"><img src='scrollTopButton.png'>
+                    </a>
+                </div>
+                <h2>Insert Portfolio Information</h2>
             </div>
         </div>
     </div>
