@@ -1,239 +1,342 @@
 <!doctype html>
 <html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1", http-equiv="Content-Type" content="text/html"; charset="UTF-8">
-      <title>RS Sentio</title>
-      <style>
-         html {
-         background: url(backgroundImage.png) no-repeat center center fixed; 
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
-         }
-         body {
-         margin-left: auto;
-         margin-right: auto;
-         }
-         @font-face {  
-  	 font-family: Norwester ;  
-  	 src: url(norwester.otf) format("truetype");  
-	 }  
-         footer {
-         clear: both;
-         }
-         h1 {
-         font-family: 'Norwester', sans-serif;
-         color: #fff;
-         font-size: 104px;
-         text-align: center;
-         white-space: nowrap
-         }
-         h2 {
-         font-size: 1.7em;
-         color: #000;
-         }
-         p2 {
-         margin-left: 1em;
-         font-family: 'Roboto', sans-serif;
-         color: #fff;
-         }
-         div#jumpToPortfolio {
-         	margin-top: 50%;
-         }
-         div#jumpToAbout {
-         	margin-top: 60%;
-         }
-         div#jumpToContact {
-         	margin-top: 60%;
-         }
-         div#jumpToHome {
-         	margin-top: -30px;
-         }
-         div.sectionContact {
-         	width: 100%;
-         	height: 700px;
-         	display: inline-block;
-         	background-color: #fff;
-         	position: absolute;
-         	margin-top: 60%
-         }
-         div.sectionPortfolio {
-         	width: 100%;
-         	height: 700px;
-         	display: inline-block;
-         	background-color: #fff;
-         	position: absolute;
-         	margin-top: 50%;
-         }
-         .backToTopButton {
-         	float: right;
-         	padding: 10px;
-         }
-         div.sectionAbout {
-         	width: 100%;
-         	height: 700px;
-         	display: inline-block;
-         	background-color: #fff;
-         	position: absolute;
-         	margin-top: 60%
-         }
-         .sectionPortfolio ul {
-         	font-family: 'Oswald', sans-serif;
-         }
-         div.sectionMiddle {
-    	 display: inline-block;
-    	 position: absolute;
-    	 top: 0;
-    	 bottom: 0;
-    	 left: 0;
-    	 right: 0;
-    	 width: 1075px;
-    	 height: 500px;
-    	 margin: auto;
-    	 white-space: nowrap
-         }
-         .navigationBoxes ul {
-         	list-style: none;
-         	padding: 0;
-         	margin: 0;
-         	text-align: center;
-         }
-         .navigationBoxItem {
-         	font-family: 'Norwester', sans-serif;
-         	display: inline-block;
-         	line-height: 20px;
-         	font-size: 54px;
-         	padding: 30px;
-         	border: 4px solid #fff;
-         	margin-left: .3em;
-         	margin-top: -1em;
-         	transition: 1s background-color;
-         }
-         .navigationBoxItem:hover {
-         	background-color: rgba(243,243,243,0.2);
-         }
-         .navigationBoxes a {
-         	color: #fff;
-         	text-decoration: none;
-         }
-         .navigationMenu ul {
-         list-style: none;
-         margin: 0;
-         text-align: right;
-         }
-         .navigationMenu li {
-         font-family: 'Norwester', sans-serif;
-         font-size: 1.8em;
-         line-height: 30px;
-         height: 30px;
-         margin: .9em;
-         display: inline-block;
-         margin-left: -4px;
-         }
-         .navigationMenu a {
-         text-decoration: none;
-         color: #fff;
-         display: block;
-         transition: 1s font-size;
-         }
-         .navigationMenu a:hover {
-         font-size: 1.1em;
-         }
-         .navigationMenu a.active { 
-         background-color: #fff;
-         color: #444;
-         cursor: default;
-         }
-         li.navigationName {
-         border-bottom: none;
-         font-weight: bold;
-         padding: none;
-         margin: none;
-         }
-         @media screen and (max-width: 1400px) {
-         body {
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .navigationMenu ul {
-         list-style: none;
-         background-color: #444;
-         padding: 0;
-         margin: 0;
-         text-align: center;
-         }
-         h1 {
-         display: none;
-         }
-         li.navigationItem {
-         font-size: 1.5em;
-         }
-         }
-         @media screen and (max-width: 480px) {
-         body {
-         margin-left: none;
-         margin-right: none;
-         }
-         .navigationMenu ul {
-         list-style: none;
-         background-color: #444;
-         padding: 0;
-         margin: 0;
-         text-align: center;
-         }
-         h1 {
-         display: none;
-         }
-         li.navigationItem {
-         font-size: 1.5em;
-         margin-left: 0px;
-         margin: 1em;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <div id="jumpToHome"><a name='home'>.</a></div>
-         <div class='navigationMenu'>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" , http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <title>RS Sentio</title>
+    <style>
+        html {
+            background: url(backgroundImage.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        body {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @font-face {
+            font-family: Norwester;
+            src: url(norwester.otf) format("truetype");
+        }
+        footer {
+            clear: both;
+        }
+        h1 {
+            font-family: 'Norwester', sans-serif;
+            color: #fff;
+            font-size: 104px;
+            text-align: center;
+            white-space: nowrap
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8em;
+            color: #000;
+        }
+        p2 {
+            margin-left: 1em;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+        div#jumpToPortfolio {
+            margin-top: 50%;
+        }
+        div#jumpToAbout {
+            margin-top: 60%;
+        }
+        div#jumpToContact {
+            margin-top: 60%;
+        }
+        div#jumpToHome {
+            margin-top: -30px;
+        }
+        div.sectionContact {
+            width: 100%;
+            height: 700px;
+            display: inline-block;
+            background-color: #fff;
+            position: absolute;
+            margin-top: 60%
+        }
+        div.sectionPortfolio {
+            width: 100%;
+            height: 700px;
+            display: inline-block;
+            background-color: #fff;
+            position: absolute;
+            margin-top: 50%;
+        }
+        .backToTopButton {
+            float: right;
+            padding: 10px;
+        }
+        div.sectionAbout {
+            width: 100%;
+            height: 700px;
+            display: inline-block;
+            background-color: #fff;
+            position: absolute;
+            margin-top: 60%
+        }
+        .sectionPortfolio ul {
+            font-family: 'Oswald', sans-serif;
+        }
+        div.sectionMiddle {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 1075px;
+            height: 500px;
+            margin: auto;
+            white-space: nowrap
+        }
+        .navigationBoxes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .navigationBoxItem {
+            font-family: 'Norwester', sans-serif;
+            display: inline-block;
+            line-height: 20px;
+            font-size: 54px;
+            padding: 30px;
+            border: 4px solid #fff;
+            margin-left: .3em;
+            margin-top: -1em;
+            transition: 1s background-color;
+        }
+        .navigationBoxItem:hover {
+            background-color: rgba(243, 243, 243, 0.2);
+        }
+        .navigationBoxes a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navigationMenu ul {
+            list-style: none;
+            margin: 0;
+            text-align: right;
+        }
+        .navigationMenu li {
+            font-family: 'Norwester', sans-serif;
+            font-size: 1.8em;
+            line-height: 30px;
+            height: 30px;
+            margin: .9em;
+            display: inline-block;
+            margin-left: -4px;
+        }
+        .navigationMenu a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: 1s font-size;
+        }
+        .navigationMenu a:hover {
+            font-size: 1.1em;
+        }
+        .navigationMenu a.active {
+            background-color: #fff;
+            color: #444;
+            cursor: default;
+        }
+        li.navigationName {
+            border-bottom: none;
+            font-weight: bold;
+            padding: none;
+            margin: none;
+        }
+        .leftColumn {
+            float: left;
+            width: 33%;
+            margin-left: 1.1em;
+        }
+        .rightColumn {
+            float: right;
+            width: 33%;
+        }
+        .centerColumn {
+            display: inline-block;
+            width: 33%;
+        }
+        .boxContainer {
+            padding: 50px;
+            height: 600px;
+        }
+        .boxWrapper {
+            float: left;
+            height: 600px;
+            width: 49%;
+        }
+        .boxWrapperLeft {
+            float: left;
+            width: 49%;
+        }
+        .boxWrapperRight {
+            float: right;
+            width: 49%;
+        }
+        .rightBoxColumn {
+            float: right;
+            height: 600px;
+            width: 49%;
+        }
+        .smallBoxContainerItem {
+            height: 180px;
+            width: 180px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .largeBoxContainerItem {
+            height: 273px;
+            width: 100%;
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 1400px) {
+            body {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .navigationMenu ul {
+                list-style: none;
+                background-color: #444;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            h1 {
+                display: none;
+            }
+            li.navigationItem {
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            body {
+                margin-left: none;
+                margin-right: none;
+            }
+            .navigationMenu ul {
+                list-style: none;
+                background-color: #444;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            h1 {
+                display: none;
+            }
+            li.navigationItem {
+                font-size: 1.5em;
+                margin-left: 0px;
+                margin: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="jumpToHome"><a name='home'>.</a>
+        </div>
+        <div class='navigationMenu'>
             <ul>
-               <li class='smoothScroll'><a href="#portfolio">Portfolio</a></li>
-               <li class='smoothScroll'><a href="#about">About</a></li>
-               <li class='smoothScroll'><a href="#contact">Contact</a></li>
+                <li class='smoothScroll'><a href="#portfolio">Portfolio</a>
+                </li>
+                <li class='smoothScroll'><a href="#about">About</a>
+                </li>
+                <li class='smoothScroll'><a href="#contact">Contact</a>
+                </li>
             </ul>
-         </div>
-      </header>
-      <div class="sectionMiddle">
-      <h1>Programmer. Designer.</h1>
-      	<div class="navigationBoxes">
-       		<ul>
-       			<li class='navigationBoxItem'><a href="#portfolio">Portfolio</a></li>
-       			<li class='navigationBoxItem'><a href="#contact">Contact</a></li>
-       		</ul>
-      	</div>
-      </div>
-      <div class='sectionPortfolio'>
-      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
-      <ul>
-      	<li><a href="responsiveWebpage.html">Responsive Webpage</a></li>
-      </ul>
-      </div>
-      <div id="jumpToPortfolio"><a name='portfolio'>.</a></div>
-      <div class='sectionAbout'>
-      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
-      </div>
-      <div id="jumpToAbout"><a name='about'>.</a></div>
-      <div class='sectionContact'>
-      	<div class='backToTopButton'><a href="#home"><img src='scrollTopButton.png'></a></div>
-      </div>
-      <div id="jumpToContact"><a name='contact'>.</a></div>
-      <footer>
-         <div class='sectionFooter'>
+        </div>
+    </header>
+    <div class="sectionMiddle">
+        <h1>Programmer. Designer.</h1>
+        <div class="navigationBoxes">
+            <ul>
+                <li class='navigationBoxItem'><a href="#portfolio">Portfolio</a>
+                </li>
+                <li class='navigationBoxItem'><a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='sectionPortfolio'>
+        <div class='boxContainer'>
+            <div class='boxWrapper'>
+                <div class='boxWrapperLeft'>
+                    <div class='largeBoxContainerItem'><img src='https://placehold.it/433x277'>
+                    </div>
+                    <div class='largeBoxContainerItem'><img src='https://placehold.it/433x277'>
+                    </div>
+                </div>
+                <div class='boxWrapperRight'>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                    <div class='smallBoxContainerItem'><img src='https://placehold.it/180x180'>
+                    </div>
+                </div>
+            </div>
+            <div class='rightBoxColumn'>
+            </div>
+        </div>
+    </div>
+
+    <div id="jumpToPortfolio"><a name='portfolio'>.</a>
+    </div>
+    <div class='sectionAbout'>
+        <div class='leftColumn'>
+            <h2>Text</h2>
+        </div>
+        <div class='centerColumn'>
+            <h2>Text</h2>
+        </div>
+        <div class='rightColumn'>
+            <div class='backToTopButton'>
+                <a href="#home"><img src='scrollTopButton.png'>
+                </a>
+            </div>
+            <h2>Text</h2>
+        </div>
+    </div>
+    <div id="jumpToAbout"><a name='about'>.</a>
+    </div>
+    <div class='sectionContact'>
+        <div class='backToTopButton'>
+            <a href="#home"><img src='scrollTopButton.png'>
+            </a>
+        </div>
+    </div>
+    <div id="jumpToContact"><a name='contact'>.</a>
+    </div>
+    <footer>
+        <div class='sectionFooter'>
             <p2></p2>
-         </div>
-      </footer>
+        </div>
+    </footer>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./smoothscroll.js"></script>
-   </body>
+    <script type="text/javascript" src="./smoothscroll.js"></script>
+</body>
+
 </html>
